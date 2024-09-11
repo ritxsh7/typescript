@@ -1,0 +1,34 @@
+# INTRO
+
+1. What, Why ts? : 
+
+    => Ts is typed Javascript
+    => TypeScript adds types to JavaScript to help you speed up the development 
+       by catching errors before you even run the JavaScript code.
+    => Ts uses compilers unlike js, which allows to catch datatype commands
+    => TypeScript also implements the future features of JavaScript.
+
+2. Setup : 
+
+    => Node.js – Node.js is the environment in which you will run the TypeScript compiler. 
+    => TypeScript compiler – a Node.js module that compiles TypeScript into JavaScript.
+       "npm i typescript"
+    => To directly on Node.js without precompiling, you can use the ts-node module.
+      "npm install -g ts-node"
+
+3. Datatypes :
+
+    A. boolean :
+    
+        => TypeScript boolean type has two values: true and false
+        => let pending: boolean; 
+            pending = true;
+
+    B. Numbers :
+     
+        a. bigint : whole numbers larger than 253 – 1.
+                    A Big integer literal has the n character at the end of an integer
+            example : let big: bigint = 9007199254740991n;
+
+        b. number : normal floating point number
+            example : let a: number = 32.04;
