@@ -37,8 +37,9 @@ var __setFunctionName = (this && this.__setFunctionName) || function (f, name, p
     return Object.defineProperty(f, "name", { configurable: true, value: prefix ? "".concat(prefix, " ", name) : name });
 };
 //decorator
-function Logger(constructor) {
-    console.log("Logger decorator called on " + constructor);
+function Logger(target) {
+    // target variable access the class
+    console.log(target.name);
 }
 //plain class
 var Employee = function () {
